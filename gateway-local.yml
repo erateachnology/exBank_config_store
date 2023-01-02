@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    name: local
+server:
+  port: 8003
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8002/eureka

@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    name: dev
+server:
+  port: ${SERVER_PORT}
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVICE_URL}
